@@ -28,3 +28,141 @@ Comandos Básicos do Git
 |-----------------------------------|----------------------------------------------------------------------|
 
 
+============================================================
+
+==========================================================
+==========================================================
+
+Git
+ - Funcionamento;
+ - O que é?
+ - Comandos e Funcionalidades;
+ - Comandos;
+ - ...
+
+*
+*
+
+. 4. Dicionário de Git == Algumas palavras muito utilizadas com o Git/GitHub
+
+. Repositório: É um espaço digital aonde o seu projeto vai ser salvo. No seu computador ele é a pasta aonde o seu projeto está salvo.
+. Controle de versão: É a proposta básica do Git, um histórico de tudo o que aconteceu com o(s) arquivo(s) que você está trabalhando. Por exemplo, quando você salva um arquivo do Word no seu computador, você perde todas as versões anteriores, ficando somente com o conteúdo atual. Com o Git você tem todas as versões antigas dos arquivos.
+. Commit: A "etiqueta" que você está criando daquele arquivo para o controle de versão (histórico), com o que (mensagem) e quando (data/hora) do que foi salvo.
+. Pull: "Puxar" em inglês. O pull serve para "puxar" (trazer) uma parte (ou tudo) do repositório remoto, copiando para seu repositório local (sua máquina).
+. Push: "Empurrar" em inglês. Esse comando faz uma cópia de uma parte (ou tudo) do repositório local e "empurra" (envia) ele para o repositório remoto.
+. Clone: O comando clone faz exatamente o que ele sugere: uma cópia exata que você vai baixar do repositório remoto para a sua máquina.
+. Log: Histórico dos commits do repositório atual.
+
+*
+*
+
+BASICO:
+. git config --global user.name "Michael Bonfogo"
+. git config --global user.email "michael.bonfogo@f1rst.com.br"
+
+. git init [Nome-do-Projeto] ==> CRIA UM NOVO REPOSITÓRIO LOCAL COM UM NOME ESPECIFICO
+. git clone [url] ==> BAIXA UM PROJETO E SEU HISTÓRICO DE VERSÃO INTEIRO
+
+. git status ==> LISTA TODOS OS ARQUIVOS NOVOS OU MODIFICADOS PARA SEREM COMMITADOS
+. git diff
+. git add [arquivos] ==> FAZ O SNAPSHOT DE UM ARQUIVO NA PREPARAÇÃO PARA VERSIONAMENTO
+. git commit -m "[mensagem descritiva]" ==> GRAVA O SNAPSHOT PERMANENTE DO ARQUIVO NO HISTÓRICO DE VERSÃO
+
+. git branch ==> LISTA TODAS AS BRANCHES LOCAIS NO REPOSITÓRIO ATUAL
+. git branch [nome-do-branch] ==> CRIA UMA NOVA BRANCH
+. git checkout [nome-do-branch] ==> MUDA PARA O BRANCH ESPECIFICO E ATUALIZA O DIRETÓRIO DE TRABALHO
+. git merge [branch]
+. git branch -d [nome-do-branch]
+
+. git rm [arquivo]
+. git rm --cached [arquivo]
+. git mv [arquivo-original] [arquivo-renomeado]
+
+. git reset [commit]
+
+. git fetch [marcador]
+. git merge [marcador]/[branch]
+. git push [alias] [branch] ==> ENVIA TODOS OS COMMITS DO BRANCH LOCAL PARA O GITHUB/LAB
+. git pull ==> bAIXA O HISTÓRICO E INCORPORA AS MUDANÇAS
+*
+
+CONFIGURE A FERRAMENTA
+. git config --global user.name "[nome]"
+. git config -- global user.email "[endereço-de-email]"
+
+. git coonfig --global color.ui auto
+
+CRIE REPOSITÓRIOS
+. git init [Nome-do-Projeto] ==> CRIA UM NOVO REPOSITÓRIO LOCAL COM UM NOME ESPECIFICO
+. git clone [url] ==> BAIXA UM PROJETO E SEU HISTÓRICO DE VERSÃO INTEIRO
+
+FAÇA MUDANÇA
+. git status
+. git diff
+. git add [arquivos]
+. git diff --staged
+. git rest [arquivos]
+. git commit -m "[mensagem descritiva]"
+
+MUDANÇAS EM GRUPO
+. git branch
+. git branch [nome-do-branch]
+. git checkout [nome-do-branch]
+. git merge [branch]
+. git branch -d [nome-do-branch]
+
+REFATORE NOME DOS ARQUIVOS
+. git rm [arquivo]
+. git rm --cached [arquivo]
+. git mv [arquivo-original] [arquivo-renomeado]
+
+SUPRIMA O RASTREAMENTO
+. verificar ...
+
+SALVE FRAGMENTOS
+. git stash
+. git stash pop
+. git stash list
+. git stash drop
+
+REVISE HISTÓRICO
+. git log
+. git log --follow [arquivo]
+. git diff [primeiro-branch] ... [segundo-branch]
+. git show [commit]
+
+DESFAÇA COMMITS
+. git reset [commit]
+. git reset --hard [commit]
+
+SINCRONIZE MUDANÇAS
+. git fetch [marcador]
+. git merge [marcador]/[branch]
+. git push [alias] [branch] ==> ENVIA TODOS OS COMMITS DO BRANCH LOCAL PARA O GITHUB/LAB
+. git pull ==> bAIXA O HISTÓRICO E INCORPORA AS MUDANÇAS
+
+==========================================================
+==========================================================
+
+Portanto, para remover arquivos do staging area basta fazer:
+. git restore --staged nome-arquivo
+. git restore --staged src/test/resources/mdsql.sql
+
+
+# ou, para vários arquivos
+. git restore --staged nome-arquivo1 nome-arquivo2 nome-arquivo3
+
+# ou, para todos os arquivos que estiverem no staging area
+. git restore --staged .
+
+==========================================================
+==========================================================
+
+git checkout nomeSuaBranch
+git merge nomeBranchQueQuerPuxarPraSua
+
+==========================================================
+==========================================================
+
+Realizar o commit e o push em sequência usando os seguintes comandos:
+git commit -m "Sua mensagem de commit" && git push
