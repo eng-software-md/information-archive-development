@@ -1,1 +1,137 @@
 
+Comandos Básicos do Docker
+
+|------------------------------------------|--------------------------------------------------------------------------------|
+| Comando                                  | Descrição                                                                      |
+|------------------------------------------|--------------------------------------------------------------------------------|
+| `docker --version`                       | Verifica a versão instalada do Docker                                          |
+| `docker ps`                              | Lista os containers em execução                                                |
+| `docker ps -a`                           | Lista todos os containers (ativos e inativos)                                  |
+| `docker images`                          | Lista todas as imagens disponíveis localmente                                  |
+| `docker pull <imagem>`                   | Baixa uma imagem do Docker Hub                                                 |
+| `docker run <imagem>`                    | Cria e executa um container da imagem especificada                             |
+| `docker run -d <imagem>`                 | Executa o container em modo destacado (background)                             |
+| `docker run -it <imagem>`                | Executa o container em modo interativo com terminal                            |
+| `docker stop <container>`                | Para um container em execução                                                  |
+| `docker start <container>`               | Inicia um container parado                                                     |
+| `docker restart <container>`             | Reinicia um container                                                          |
+| `docker rm <container>`                  | Remove um container                                                            |
+| `docker rmi <imagem>`                    | Remove uma imagem                                                              |
+| `docker exec -it <container> bash`       | Acessa o terminal de um container em execução                                  |
+| `docker logs <container>`                | Exibe os logs de um container                                                  |
+| `docker build -t <nome>:<tag> .`         | Cria uma imagem a partir de um Dockerfile                                      |
+| `docker-compose up`                      | Sobe serviços definidos no arquivo `docker-compose.yml`                        |
+| `docker-compose down`                    | Para e remove os containers, redes e volumes definidos pelo Docker Compose     |
+| `docker network ls`                      | Lista as redes criadas pelo Docker                                             |
+| `docker volume ls`                       | Lista os volumes criados pelo Docker                                           |
+|------------------------------------------|--------------------------------------------------------------------------------|
+
+
+**************************************************************************
+**************************************************************************
+
+
+Conhecendo o Docker e 30 comandos úteis para seu dia a dia:
+
+. O que é o Docker:
+. Docker é uma plataforma de software que permite que os desenvolvedores criem, gerenciem e implantem aplicativos em contêineres.
+
+. Um contêiner é uma unidade de software que contém tudo o que um aplicativo precisa para ser executado, incluindo o código, bibliotecas, dependências e configurações.
+
+. O Docker permite que os desenvolvedores empacotem todos esses elementos em um contêiner e implantem o aplicativo em qualquer ambiente que possua o Docker instalado, sem se preocupar com as diferenças de infraestrutura entre os ambientes.
+. Além disso, o Docker fornece recursos para gerenciamento de contêineres, como criar, iniciar, parar e excluir contêineres,
+. Além de permitir a criação de redes privadas e compartilhamento de volumes de dados entre contêineres.
+. Esses recursos tornam mais fácil para os desenvolvedores criar e gerenciar ambientes de desenvolvimento, teste e produção consistentes e confiáveis.
+. O Docker é amplamente utilizado para acelerar o desenvolvimento de aplicativos e simplificar o processo de implantação e gerenciamento de infraestrutura.
+
+**************************************************************************
+**************************************************************************
+
+Arquitetura do Docker:
+
+. A arquitetura do Docker é composta por vários componentes que trabalham juntos para criar e gerenciar contêineres de aplicativos.
+
+Os principais componentes são:
+
+1. Docker Daemon:
+. É um processo em segundo plano que gerencia todos os contêineres do Docker em uma máquina host.
+. Ele é responsável por criar, iniciar, parar e excluir contêineres, além de gerenciar as imagens de contêineres.
+
+2. API do Docker:
+. É a interface de programação de aplicativos (API) que permite que os usuários interajam com o Docker.
+. Ela pode ser acessada por meio da linha de comando do Docker, do Docker Compose ou de outras ferramentas.
+
+3. Imagens do Docker:
+. São pacotes autônomos que contêm todo o código, bibliotecas e dependências necessárias para executar um aplicativo em um contêiner.
+. As imagens são criadas a partir de um Dockerfile, que contém as instruções para construir a imagem.
+
+4. Registros do Docker:
+. São repositórios que armazenam e distribuem imagens do Docker.
+. O Docker Hub é o registro público mais conhecido, mas também é possível criar registros privados para armazenar imagens proprietárias.
+
+5. Docker CLI:
+. É a interface de linha de comando do Docker que permite que os usuários executem comandos para gerenciar contêineres, imagens e outros recursos do Docker.
+
+6. Docker Compose:
+. É uma ferramenta que permite que os usuários definam e gerenciem aplicativos compostos por vários contêineres.
+. Ele usa arquivos YAML para definir os serviços do aplicativo e suas dependências.
+
+Em resumo, a arquitetura do Docker é composta por:
+=> um daemon, API, imagens, registros, CLI e Docker Compose,
+. todos trabalhando juntos para criar e gerenciar contêineres de aplicativos de maneira eficiente e simplificada.
+
+**************************************************************************
+**************************************************************************
+
+Comandos dos Docker
+
+. Comandos do Docker que podem ser úteis para gerenciar e trabalhar com contêineres e imagens:
+
+.Comandos básicos
+1. docker –version: => Verifica a versão do Docker instalada na máquina.
+2. docker info:  => Mostra informações detalhadas do Docker, como versão, número de contêineres e imagens, entre outros.
+3. docker run <imagem>:  => Cria e executa um novo contêiner com base em uma imagem do Docker.
+4. docker ps: Lista todos os contêineres em execução no momento.
+5. docker ps -a: Lista todos os contêineres, incluindo os que não estão em execução.
+6. docker start <nome/id do contêiner>: Inicia um contêiner previamente criado.
+7. docker stop <nome/id do contêiner>: Para a execução de um contêiner em execução.
+8. docker rm <nome/id do contêiner>: Remove um contêiner previamente criado.
+9. docker rmi <nome/id da imagem>: Remove uma imagem previamente baixada ou criada.
+10. docker exec -it <nome/id do contêiner> <comando>: Executa um comando dentro de um contêiner em execução.
+
+
+
+. Comandos para trabalhar com imagens
+1. docker images: Lista todas as imagens baixadas ou criadas localmente.
+2. docker pull <nome da imagem>: Baixa uma imagem do Docker Hub ou outro registro.
+3. docker build <caminho do Dockerfile>: Cria uma nova imagem com base em um Dockerfile.
+4. docker tag <nome da imagem> <nome da imagem:versão>: Adiciona uma nova tag a uma imagem.
+5. docker push <nome da imagem>: Envia uma imagem para um registro remoto, como o Docker Hub.
+
+
+. Comandos para gerenciar redes e volumes
+docker network create <nome da rede>: Cria uma nova rede personalizada.
+1. docker network ls: Lista todas as redes disponíveis.
+2. docker network connect <nome da rede> <nome/id do contêiner>: Conecta um contêiner a uma rede.
+3. docker volume create <nome do volume>: Cria um novo volume personalizado.
+4. docker volume ls: Lista todos os volumes disponíveis.
+5. docker volume inspect <nome do volume>: Mostra informações detalhadas sobre um volume.
+6. docker volume rm <nome do volume>: Remove um volume previamente criado.
+
+
+. Comandos para trabalhar com Docker Compose
+1. docker-compose up: Cria e inicia todos os serviços definidos em um arquivo docker-compose.yml.
+2. docker-compose down: Para a execução de todos os serviços definidos em um arquivo docker-compose.yml.
+3. docker-compose ps: Lista todos os serviços definidos em um arquivo docker-compose.yml.
+4. docker-compose logs <nome do serviço>: Mostra os logs de um serviço definido em um arquivo docker-compose.yml.
+
+
+. Comandos avançados
+1. docker inspect <nome/id do contêiner>: Mostra informações detalhadas sobre um contêiner.
+2. docker stats <nome/id do contêiner>: Mostra estatísticas em tempo real de um contêiner em execução.
+3. docker top <nome/id do contêiner>: Mostra os processos em execução em um contêiner.
+4. docker diff <nome/id do contêiner>: Lista os arquivos e diretórios alterados no sistema de arquivos de um contêiner desde que o contêiner foi criado
+
+**************************************************************************
+**************************************************************************
+
