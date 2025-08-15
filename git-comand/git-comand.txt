@@ -40,9 +40,6 @@ Git
  - Comandos;
  - ...
 
-*
-*
-
 . 4. Dicionário de Git == Algumas palavras muito utilizadas com o Git/GitHub
 
 . Repositório: É um espaço digital aonde o seu projeto vai ser salvo. No seu computador ele é a pasta aonde o seu projeto está salvo.
@@ -53,8 +50,6 @@ Git
 . Clone: O comando clone faz exatamente o que ele sugere: uma cópia exata que você vai baixar do repositório remoto para a sua máquina.
 . Log: Histórico dos commits do repositório atual.
 
-*
-*
 
 BASICO:
 . git config --global user.name "Michael Bonfogo"
@@ -84,7 +79,7 @@ BASICO:
 . git merge [marcador]/[branch]
 . git push [alias] [branch] ==> ENVIA TODOS OS COMMITS DO BRANCH LOCAL PARA O GITHUB/LAB
 . git pull ==> bAIXA O HISTÓRICO E INCORPORA AS MUDANÇAS
-*
+
 
 CONFIGURE A FERRAMENTA
 . git config --global user.name "[nome]"
