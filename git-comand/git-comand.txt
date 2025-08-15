@@ -1,0 +1,30 @@
+Comandos Básicos do Git
+
+|-----------------------------------|----------------------------------------------------------------------|
+| Comando                           | Descrição                                                            |
+|-----------------------------------|----------------------------------------------------------------------|
+| git init                          | Inicializa um novo repositório Git.                                  |
+| git clone <url>                   | Clona um repositório remoto.                                         |
+| git status                        | Mostra o estado do repositório (arquivos modificados, staged, etc.). |
+| git add <arquivo>                 | Adiciona um arquivo ao stage.                                        |
+| git add .                         | Adiciona todos os arquivos modificados ao stage.                     |
+| git commit -m "mensagem"          | Salva as alterações staged com uma mensagem.                         |
+| git log                           | Mostra o histórico de commits.                                       |
+| git diff                          | Mostra as diferenças entre arquivos.                                 |
+| git branch                        | Lista todas as branches.                                             |
+| git branch <nome>                 | Cria uma nova branch.                                                |
+| git checkout <branch-ou-commit>   | Troca para outra branch ou commit.                                   |
+| git checkout -b <nome>            | Cria e muda para uma nova branch.                                    |
+| git merge <branch>                | Mescla uma branch na branch atual.                                   |
+| git pull                          | Atualiza o repositório local com as mudanças do remoto.              |
+| git push                          | Envia seus commits para o repositório remoto.                        |
+| git remote -v                     | Lista os repositórios remotos configurados.                          |
+| git fetch                         | Baixa as alterações, mas não as aplica automaticamente.              |
+| git rm <arquivo>                  | Remove um arquivo do repositório.                                    |
+| git reset <arquivo>               | Remove arquivo do stage (desfaz git add).                            |
+| git reset --hard                  | Desfaz todas as alterações não commitadas.                           |
+| git stash                         | Salva alterações temporariamente.                                    |
+| git stash pop                     | Restaura as alterações salvas com stash.                             |
+|-----------------------------------|----------------------------------------------------------------------|
+
+
