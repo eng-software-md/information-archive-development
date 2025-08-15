@@ -1,0 +1,319 @@
+
+http://www.basef.com.br/index.php/Atalhos_do_IntelliJ_Idea
+
+*************************************************************************************
+
+. Atalhos do IntelliJ Idea
+. Geral
+
+. Na aba de projetos
+. Templates de código
+. Na aba de código
+. Editando
+. Pesquisa de uso
+. Navegação
+. Pesquisar/Substituir
+. Modelos ao vivo
+. Reestruturação
+. Depuração
+. Compilar e executar
+. VCS/Histórico Local
+. Em geral
+
+*************************************************************************************
+*************************************************************************************
+
+Atalhos do IntelliJ Idea
+
+. Geral
+
+Alt + 1: Focar aba de projetos
+Alt + Shift + Insert: Alterna entre modo de seleção de linha/coluna
+Ctrl + Shift + F12: Expandir a tela
+
+. Na aba de projetos
+
+Alt + Insert: Para criar um novo arquivo
+
+. Templates de código
+
+psvm: Criar método main
+sout: System.out.println()
+Ctrl + Alt + C: Cria constante (precisa estar sobre código que permite atribuição)
+Ctrl + Alt + F: Cria field - propriedade da classe (precisa estar sobre código que permite atribuição)
+Ctrl + Alt + V: Cria variável (precisa estar sobre código que permite atribuição)
+Ctrl + Alt + T: Templates de IF, for, while, etc (precisa selecionar o código antes)
+Ctrl + J: Exibe todos os templates disponíveis
+
+. Na aba de código
+
+Ctrl + Y: Apaga a linha inteira
+Ctrl + D: Duplicar linha atual
+Alt + Shift + Setas: Mover linha atual
+Ctrl + Shift + Setas: Mover linha atual mantendo contexto
+Ctrl + Shift + A: Find Action - mostra todas as ações da IDE em uma lista
+Ctrl + N: Busca rápida de classes
+Ctrl + Shift + N: Busca rápida de arquivos
+Ctrl + B: Inspecionar elemento - go to class, method, declaration, etc
+Ctrl + Alt + L: Reformatar código
+Ctrl + Alt + M: Extrair método - transforma código selecionado em método
+Shift + F6: Renomeia classe, variável, método, etc
+Ctrl + Shift + F6: Usar referência de outra classe
+Shift & Shift: Search everywhere
+Ctrl + Shift + F: Busca por conteúdo de arquivo
+Alt + Enter: Intention actions
+Alt + Insert: Generate shortcut
+Ctrl + F12: Mostra a estrutura do arquivo - por exemplo, exibe métodos de uma classe
+Alt + F7: Find usages - mostra a lista de quem está chamando o método, usando a variável, etc
+Ctrl + G: Ir para linha
+Ctrl + H: Mostrar hierarquia da classe (classes pais)
+Alt + Home: Ir para a barra de navegação
+Ctrl + P: Mostrar parâmetros do método
+Ctrl + Q: Documentação rápida
+Ctrl + / ou Ctrl + Shift + /: Comentar código
+Ctrl + Shift + Alt + T: Métodos de refatoração
+Ctrl + Alt + O: Reajustar imports da classe (remove imports não utilizados)
+
+*************************************************************************************
+*************************************************************************************
+
+
+. Editando
+Ctrl +
+=> Espaço Conclusão de código básico (o nome de qualquer classe, método ou variável)
+
+Ctrl + Shift + Espaço
+=> Conclusão de código inteligente (filtra a lista de métodos e variáveis por tipo esperado)
+
+Ctrl + Shift + Enter
+=> Declaração completa
+
+Ctrl + P
+=> Informações de parâmetro (dentro dos argumentos de chamada de método)
+
+Ctrl + Q
+=> Pesquisa rápida de documentação
+
+Shift + F1
+=> Documento Externo
+
+??? Ctrl +!oryName, breve informação
+
+Ctrl + F1
+=> Mostrar descrições de erro ou aviso no cursor
+
+Alt + Insert
+=> Gerar código... (Getters, Setters, Construtores, hashCode/iguals, toString)
+
+. Métodos de substituição
+Ctrl + O
+
+Ctrl + I
+=> Implementar métodos
+
+Ctrl + Alt + T Surround!com…!(if..else,!try..catch, for, sincronizado, etc.)
+
+Ctrl + /
+=> Comentar/descomentar com comentário de linha
+
+Ctrl + Shift + /
+=> Comentar/descomentar com comentário em bloco
+
+Ctrl + W
+=> Selecione blocos de código crescentes sucessivamente
+
+Ctrl + Shift + W
+=> Diminui a seleção atual para o estado anterior
+
+Alt + Q
+=> Informações de contexto
+
+Alt + Enter
+=> Mostrar ações de intenção e correções rápidas
+
+Ctrl + Alt + L
+=> Código de reformatação
+
+Ctrl + Alt + O
+=> Otimizar importações
+
+Ctrl + Alt + I
+=> Recuo automático de linha(s)
+
+Tab / Shift + Tab Recuar/retirar o recuo das linhas selecionadas
+
+Ctrl!+!X! => Corta a linha atual ou o bloco selecionado para a área de transferência
+Ctrl!+!C! => Copia a linha atual ou o bloco selecionado para a área de transferência
+Ctrl!+!V! => Colar da área de transferência
+Ctrl!+!Z! => Desfazer ultimas ações
+
+Ctrl!+!Shift + V  => Colar de bunners recentes...
+Ctrl!+!D  => Duplicar linha atual ou bloco selecionado
+Ctrl!+!Y  => Excluir linha no cursor
+
+Ctrl!+!Shift + J  => Junção de linha inteligente
+Ctrl!+!Enter  => Divisão de linha inteligente ??????
+
+Shift + Enter  => Iniciar nova linha
+Ctrl + Shift + U  => Alterna maiúsculas e minúsculas para palavra no cursor ou bloco selecionado
+Ctrl + Shift + ]/[  => Selecione até o fim/início do bloco de código
+
+Ctrl + Delete/Backspace  => Excluir até o final/início da palavra
+Ctrl + NumPad +/-  =>  Expandir/recolher bloco de código
+Ctrl + Shift!+!NumPad+   => Expandir tudo
+Ctrl + Shift!+!NumPad-   => Recolher tudo
+Ctrl + F4   => Fechar guia do editor ativo
+
+
+*************************************************************************************
+*************************************************************************************
+
+. Pesquisa de uso
+Alt + F7 / Ctrl + F7   => Localizar usos/Localizar usos no arquivo
+Ctrl + Shift + F7   => Destacar usos no arquivo
+Ctrl + Alt + F7  =>  Mostrar usos
+
+*************************************************************************************
+*************************************************************************************
+
+. Navegação
+Ctrl + N   => Ir para a classe
+Ctrl + Shift + N   => Ir para o arquivo
+Ctrl + Alt + Shift + N   => Ir para o símbolo
+Alt + Direita/Esquerda   => Ir para a guia do editor seguinte/anterior
+
+F12   => Voltar para a janela de ferramentas anterior
+Esc   => Ir para o editor (na janela de ferramentas)
+
+Shift + Esc   => Ocultar janela ativa ou última janela ativa
+
+Ctrl!+!Shift!+!F4   => Fechar execução ativa / mensagens / localizar / ... guia
+Ctrl!+!G   => Ir para a linha
+Ctrl!+!E   => Pop-up de arquivos recentes
+Ctrl!+!Alt + Esquerda/Direita   => Navegar para trás/para a frente
+Ctrl!+!Shift!+!Backspace   => Navegar para o último local de edição
+
+Alt + F1   => Selecione o arquivo ou símbolo atual em qualquer visualização
+Ctrl + B , Ctrl + Clique   => em Ir para a declaração
+Ctrl + Alt + B   => Ir para a(s) implementação(ões)
+Ctrl + Shift + I   => Abrir pesquisa de definição rápida
+Ctrl + Shift + B   => Ir para a declaração de tipo
+Ctrl + U   => Ir para supermétodo / superclasse
+Alt + Cima/Baixo   => Ir para o método anterior/próximo
+Ctrl + ]/[   => Mover para o fim/início do bloco de código
+Ctrl + F12   => pop-up de estrutura de arquivo
+Ctrl + H   => Tipo de hierarquia
+Ctrl + Shift + H   => Hierarquia de métodos
+Ctrl + Alt +   => H Hierarquia de chamada
+F2 / Shift + F2   => Próximo/anterior erro realçado
+F4 / Ctrl + Enter   => Editar código-fonte / Exibir código-fonte
+Alt + Home   => Mostrar barra de navegação
+F11   => Alternar marcador
+Ctrl + F11   => Alternar marcador com mnemônico
+Ctrl + #[0-9]   => Ir para o marcador numerado
+Shift + F11   => Mostrar favoritos
+
+*************************************************************************************
+*************************************************************************************
+
+. Pesquisar/Substituir
+Pesquisa em turno duplo em todos os lugares
+Ctrl + F   => Localizar
+F3 / Shift + F3   => Localizar próximo / Localizar anterior
+Ctrl + R   => Substituir
+Ctrl + Shift + F   => Localizar no caminho
+Ctrl + Shift + R   => Substituir no caminho
+
+*************************************************************************************
+*************************************************************************************
+
+. Modelos ao vivo
+Ctrl + Alt + J   => Surround com modelo dinâmico
+Ctrl + J   => Inserir modelo dinâmico
+
+....
+
+*************************************************************************************
+*************************************************************************************
+
+. Reestruturação
+F5   => Copiar
+F6   => mover
+Alt + Excluir   => Excluir com segurança
+Shift + F6   => Renomear
+Ctrl + F6   => Alterar assinatura
+Ctrl + Alt + N   => embutido
+Ctrl + Alt + M   => Método de Extração
+Ctrl + Alt + V   => Extrair variável
+Ctrl + Alt + F   => Extrair campo
+Ctrl + Alt + C   => Extrair Constante
+Ctrl + Alt + P   => Extrair Parâmetro
+
+*************************************************************************************
+*************************************************************************************
+
+. Depuração
+F8/F7   => Passar por cima/Passar por cima
+Shift + F7 / Shift + F8   => Entrada/saída inteligente
+Alt + F9   => Executar para o cursor
+Alt + F8   => Avaliar expressão
+F9   => Retomar o programa
+Ctrl + F8   => Alternar ponto de interrupção
+Ctrl + Shift + F8   => Exibir pontos de interrupção
+
+*************************************************************************************
+*************************************************************************************
+
+. Compilar e executar
+Ctrl + F9   => Criar projeto (compilar modificado e dependente)
+Ctrl + Shift + F9   => Compila o arquivo, pacote ou módulo selecionado
+Alt + Shift + F10/F9   => Selecione a configuração e execute/e depure
+Shift + F10/F9   => Executar/Depurar
+Ctrl + Shift + F10   => Executa a configuração de contexto do editor
+
+*************************************************************************************
+*************************************************************************************
+
+. VCS/Histórico Local
+Ctrl + K / Ctrl + T   => Confirmar projeto para VCS/Atualizar do VCS
+Alt + Shift + C   => Exibir alterações recentes
+Alt + BackCitação (`) VCS􀀁􀀀------------------------------------------------  ?????
+
+*************************************************************************************
+*************************************************************************************
+
+. Em geral
+Alt + #[0-9]   => Abre a janela de ferramenta correspondente
+Ctrl + S   => Salvar tudo
+Ctrl + Alt + Y   => Sincronizar
+Ctrl + Shift + F12   => Alterna o editor de maximização
+Alt + Shift + F   => Adicionar aos favoritos
+Alt + Shift + I   => Inspecione o arquivo atual com o perfil atual
+Ctrl + BackQuote (`)   => Troca rápida do esquema atual
+Ctrl + Alt + S   => Abrir a caixa de diálogo Configurações
+Ctrl + Alt + Shift + S   => Caixa de diálogo Abrir estrutura do projeto
+Ctrl + Shift + A   => Localizar Ação
+Ctrl + Tab   => Alternar entre guias e janela de ferramentas
+
+*************************************************************************************
+*************************************************************************************
+
+Aqui está uma lista de atalhos comuns que você pode usar no Datagrip:
+
+Ctrl + Shift + A: Pesquisa de ação rápida
+Ctrl + D: Duplicar linha ou seleção
+Ctrl + Y: Excluir linha ou seleção
+Ctrl + F: Encontrar
+Ctrl + R: Substituir
+Ctrl + Alt + Setas: Mover linha ou seleção para cima ou para baixo
+Ctrl + Shift + F: Encontrar em arquivos
+Ctrl + Shift + R: Substituir em arquivos
+Ctrl + Shift + U: Alterar maiúsculas e minúsculas
+Ctrl + Shift + Enter: Executar consulta
+Ctrl + Alt + B: Ir para definição
+Ctrl + Shift + T: Refatorar
+Ctrl + Alt + L: Formatar código
+Ctrl + Alt + O: Otimizar importações
+Alt + Insert: Inserir linha antes ou depois
+Alt + Enter: Mostrar opções disponíveis
+Esses são apenas alguns dos muitos atalhos disponíveis no Datagrip. Você pode encontrar uma lista completa de atalhos no menu Ajuda > Atalhos de Teclado ou pressionando Ctrl + Shift + A e pesquisando por "Atalhos de teclado".
