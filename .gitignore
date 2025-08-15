@@ -1,0 +1,36 @@
+# Ignorar arquivos e pastas do sistema
+.DS_Store
+Thumbs.db
+
+# Ignorar diretórios de build comuns
+/target/
+/build/
+out/
+
+# Ignorar dependências gerenciadas
+/.gradle/
+/.gradle/
+/node_modules/
+
+# Ignorar arquivos de log
+*.log
+
+# Ignorar arquivos de configuração pessoal
+*.iml
+.idea/
+*.swp
+
+# Ignorar arquivos específicos de sistema operacional
+ehthumbs.db
+Icon?
+
+# Ignorar arquivos de backup de editores
+*~
+*.bak
+*.tmp
+
+# Ignorar arquivos gerados pelo Maven ou Gradle
+*.class
+
+# Ignorar arquivos do VS Code
+.vscode/
