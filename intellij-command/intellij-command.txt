@@ -1,11 +1,8 @@
 
-http://www.basef.com.br/index.php/Atalhos_do_IntelliJ_Idea
-
 *************************************************************************************
 
 . Atalhos do IntelliJ Idea
 . Geral
-
 . Na aba de projetos
 . Templates de código
 . Na aba de código
@@ -31,10 +28,12 @@ Alt + 1: Focar aba de projetos
 Alt + Shift + Insert: Alterna entre modo de seleção de linha/coluna
 Ctrl + Shift + F12: Expandir a tela
 
+*************************************************************************************
 . Na aba de projetos
 
 Alt + Insert: Para criar um novo arquivo
 
+*************************************************************************************
 . Templates de código
 
 psvm: Criar método main
@@ -45,24 +44,29 @@ Ctrl + Alt + V: Cria variável (precisa estar sobre código que permite atribui�
 Ctrl + Alt + T: Templates de IF, for, while, etc (precisa selecionar o código antes)
 Ctrl + J: Exibe todos os templates disponíveis
 
+*************************************************************************************
 . Na aba de código
 
 Ctrl + Y: Apaga a linha inteira
 Ctrl + D: Duplicar linha atual
 Alt + Shift + Setas: Mover linha atual
 Ctrl + Shift + Setas: Mover linha atual mantendo contexto
+
 Ctrl + Shift + A: Find Action - mostra todas as ações da IDE em uma lista
 Ctrl + N: Busca rápida de classes
 Ctrl + Shift + N: Busca rápida de arquivos
+
 Ctrl + B: Inspecionar elemento - go to class, method, declaration, etc
 Ctrl + Alt + L: Reformatar código
 Ctrl + Alt + M: Extrair método - transforma código selecionado em método
 Shift + F6: Renomeia classe, variável, método, etc
 Ctrl + Shift + F6: Usar referência de outra classe
+
 Shift & Shift: Search everywhere
 Ctrl + Shift + F: Busca por conteúdo de arquivo
-Alt + Enter: Intention actions
-Alt + Insert: Generate shortcut
+Alt + Enter: Intention actions = Ações de intenção
+Alt + Insert: Generate shortcut = Gerar atalho
+
 Ctrl + F12: Mostra a estrutura do arquivo - por exemplo, exibe métodos de uma classe
 Alt + F7: Find usages - mostra a lista de quem está chamando o método, usando a variável, etc
 Ctrl + G: Ir para linha
@@ -76,7 +80,6 @@ Ctrl + Alt + O: Reajustar imports da classe (remove imports não utilizados)
 
 *************************************************************************************
 *************************************************************************************
-
 
 . Editando
 Ctrl +
@@ -277,7 +280,6 @@ Ctrl + Shift + F10   => Executa a configuração de contexto do editor
 . VCS/Histórico Local
 Ctrl + K / Ctrl + T   => Confirmar projeto para VCS/Atualizar do VCS
 Alt + Shift + C   => Exibir alterações recentes
-Alt + BackCitação (`) VCS􀀁􀀀------------------------------------------------  ?????
 
 *************************************************************************************
 *************************************************************************************
@@ -317,3 +319,5 @@ Ctrl + Alt + O: Otimizar importações
 Alt + Insert: Inserir linha antes ou depois
 Alt + Enter: Mostrar opções disponíveis
 Esses são apenas alguns dos muitos atalhos disponíveis no Datagrip. Você pode encontrar uma lista completa de atalhos no menu Ajuda > Atalhos de Teclado ou pressionando Ctrl + Shift + A e pesquisando por "Atalhos de teclado".
+
+*************************************************************************************
