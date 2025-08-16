@@ -68,3 +68,79 @@ Perguntas e Respostas Java
 
 ===============================================================================================================
 
+[21] O que é um método estático em Java?
+ Método que pertence à classe (não ao objeto) e pode ser chamado sem instanciar a classe.
+
+[22] Para que serve a palavra-chave “final” em Java?
+ Torna algo imutável:
+ - class: não pode ser herdada
+ - método: não pode ser sobrescrito
+ - variável: valor não pode ser alterado
+
+[23] O que é sobrecarga de método em Java?
+ Definição de vários métodos com o mesmo nome, mas com diferentes parâmetros.
+
+[24] O que é substituição de método em Java?
+ Quando uma subclasse implementa novamente um método já definido na superclasse, alterando seu comportamento (usa-se @Override).
+
+[25] Qual é a diferença entre sobrecarga de método e substituição de método?
+ Sobrecarga (Overload): mesmo nome, diferentes parâmetros, mesma classe.
+ Substituição (Override): mesmo nome, mesma assinatura, mas em classes diferentes (herança).
+
+[26] O que é a palavra-chave “this” em Java?
+ Refere-se ao próprio objeto da classe atual.
+
+[27] O que é uma variável estática em Java?
+ Variável de classe, compartilhada entre todas as instâncias.
+
+[28] Qual é a finalidade da palavra-chave “final” nos parâmetros do método?
+ Evita que o valor do parâmetro seja modificado dentro do método.
+
+[29] Qual é o propósito da palavra-chave “static” em Java?
+ Define membros de classe (atributos e métodos) sem a necessidade de um objeto.
+
+[30] Qual é a diferença entre “==” e “.equals()” em Java?
+ “==” compara referências (endereços de memória); “.equals()” compara conteúdos (caso esteja sobrescrito corretamente para esse propósito).
+
+===============================================================================================================
+
+[31] Qual é o propósito da palavra-chave “super” em Java?
+Permite acessar métodos e atributos da superclasse a partir de uma subclasse, além de ser utilizada para chamar o construtor da classe pai.
+
+[32] O que é uma thread em Java?
+Thread é uma unidade de execução independente, ou seja, um fluxo separado dentro de um programa, permitindo paralelismo e multitarefa.
+
+[33] Como você cria e inicia um thread em Java?
+Pode-se estender a classe `Thread` e sobrescrever o método `run()`, ou implementar a interface `Runnable` e passar para um objeto `Thread`. Para iniciar, chama-se o método `start()`.
+
+[34] O que é sincronização em Java?
+Sincronização é o mecanismo para controlar o acesso de múltiplas threads a um recurso compartilhado, evitando problemas de concorrência e dados inconsistentes.
+
+[35] Qual é a diferença entre o bloco “sincronizado” e o método “sincronizado”?
+O bloco sincronizado restringe a sincronização apenas a parte do código escolhida, enquanto o método sincronizado sincroniza toda a execução do método.
+
+[36] Qual é o propósito da palavra-chave “volatile” em Java?
+Garante que mudanças realizadas em uma variável por uma thread sejam visíveis imediatamente para outras threads.
+
+[37] O que é uma exceção em Java?
+É um evento que interrompe o fluxo normal do programa, sinalizando erros que podem ser tratados pelo código.
+
+[38] Qual é a diferença entre exceções verificadas e não verificadas?
+Exceções verificadas (checked) precisam ser tratadas ou declaradas no método; exceções não verificadas (unchecked) são subclasses de `RuntimeException` e não exigem tratamento obrigatório.
+
+[39] Como você lida com exceções em Java?
+Utilizando blocos `try-catch` para capturar e tratar exceções, e opcionalmente `finally` para executar um bloco obrigatoriamente ao final.
+
+[40] Qual é o propósito do bloco “finally” no tratamento de exceções?
+Executar código de limpeza ou encerramento, independentemente de ter ocorrido exceção ou não.
+
+===============================================================================================================
+
+
+
+
+
+
+
+
+
