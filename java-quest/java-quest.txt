@@ -1,1 +1,70 @@
-xx
+Perguntas e Respostas Java
+
+
+[1] O que é Java?
+ Java é uma linguagem de programação orientada a objetos, robusta, multiplataforma, de tipagem forte e amplamente utilizada para o desenvolvimento de aplicações desktop, web, mobile e sistemas embarcados.
+
+[2] Qual é a diferença entre Java e JavaScript?
+ Java é uma linguagem de propósito geral, compilada, orientada a objetos, usada também em backend e aplicações grandes.
+ JavaScript é uma linguagem interpretada, utilizada principalmente para scripts em páginas web no lado cliente (embora também possa ser utilizada no backend com Node.js).
+
+[3] Qual é o princípio básico da programação Java?
+ O princípio básico é a Orientação a Objetos, baseada em conceitos como classes, objetos, abstração, encapsulamento, herança e polimorfismo.
+
+[4] Quais são as principais características do Java?
+ Portabilidade (write once, run anywhere), segurança, robustez, orientação a objetos, gerenciamento automático de memória (garbage collection) e grande biblioteca padrão (Java API).
+
+[5] O que é uma classe em Java?
+ É um molde ou estrutura que define os atributos (variáveis) e métodos (comportamentos) que os objetos daquele tipo terão.
+
+[6] O que é um objeto em Java?
+ É uma instância de uma classe, contendo valores específicos para seus atributos e sendo capaz de executar métodos definidos na classe.
+
+[7] O que é um método em Java?
+ Método é uma função que faz parte de uma classe/objeto, responsável por realizar ações ou calcular valores.
+
+[8] Qual é a diferença entre uma classe e um objeto?
+ Classe é o projeto (definição), e objeto é a concretização desse projeto (instância em memória).
+
+[9] O que é herança em Java?
+ É o mecanismo que permite que uma classe (subclasse) receba os atributos e métodos de outra classe (superclasse), promovendo reutilização de código.
+
+[10] Quais são os tipos de herança em Java?
+ - Herança simples (de uma única classe)
+ - Herança hierárquica (uma superclasse com várias subclasses)
+ Obs.: Java não permite herança múltipla de classes (apenas de interfaces).
+
+===============================================================================================================
+
+[11] O que é polimorfismo em Java?
+ Capacidade de tratar objetos de diferentes classes derivadas de forma uniforme, permitindo que métodos com mesmo nome possam ter comportamentos diferentes.
+
+[12] O que são modificadores de acesso em Java?
+ Palavras-chave que controlam a visibilidade de atributos, métodos e classes (`public`, `private`, `protected` e default/pacote).
+
+[13] O que é encapsulamento em Java?
+ É o princípio de esconder informações internas do objeto e expor apenas o necessário, geralmente usando modificadores de acesso.
+
+[14] O que é um construtor em Java?
+ Método especial chamado ao criar um objeto, com o mesmo nome da classe, que inicializa os atributos.
+
+[15] Qual é a diferença entre um construtor e um método?
+ Construtor é chamado automaticamente ao criar o objeto e não tem tipo de retorno; método é chamado explicitamente e define um tipo de retorno.
+
+[16] O que é a Máquina Virtual Java (JVM)?
+ É o ambiente de execução responsável por interpretar e executar o bytecode Java em qualquer sistema operacional.
+
+[17] O que é o Java Development Kit (JDK)?
+ É o kit de desenvolvimento Java, incluindo compilador, ferramentas e biblioteca padrão para criar aplicações Java.
+
+[18] Qual é a diferença entre o JDK e o JRE?
+ JDK inclui o JRE mais ferramentas de desenvolvimento; JRE contém apenas o necessário para executar aplicações Java.
+
+[19] O que é um pacote em Java?
+ É uma forma de organizar as classes em namespaces, evitando conflitos de nomes e facilitando a estruturação do projeto.
+
+[20] Qual é a diferença entre uma classe abstrata e uma interface?
+ Classe abstrata pode ter métodos implementados e atributos; interface só define métodos (sem implementação até Java 8, que permitiu métodos default/static).
+
+===============================================================================================================
+
