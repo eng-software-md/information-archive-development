@@ -161,3 +161,36 @@ git merge nomeBranchQueQuerPuxarPraSua
 
 Realizar o commit e o push em sequência usando os seguintes comandos:
 git commit -m "Sua mensagem de commit" && git push
+
+
+==========================================================
+==========================================================
+
+Para listar todas as configurações globais do Git, utilize o comando abaixo no terminal:
+git config --global --list
+
+Esse comando exibirá todas as configurações que foram definidas como globais para o usuário atual, como nome, e-mail e preferências. Se quiser ver todas as configurações (locais, globais e do sistema), use:
+git config --list
+
+
+Se você quer juntar estes dois comandos do Git:
+git config --global --list
+git config --list
+
+em um só comando, de modo que apareça primeiro as configurações globais e depois todas as configurações efetivas, basta usar o operador `&&` para executá-los sequencialmente. Exemplo:
+git config --global --list && git config --list
+
+Se desejar visualizar na saída o que é global e o que é combinado, pode separar por um `echo` para legibilidade:
+echo "Configurações globais:" && git config --global --list && echo "---" && echo "Todas as configurações:" && git config --list
+
+Dessa forma, os dois comandos são executados em sequência, mostrando separações para facilitar a visualização no terminal.
+
+==========================================================
+==========================================================
+
+git remote add origin https://github.com/eng-software-md/classes-java.git
+git branch -M main
+git push -u origin main
+
+==========================================================
+==========================================================
