@@ -1,0 +1,263 @@
+***********************************************************************************************
+
+. Aqui está uma lista de alguns dos caracteres mais comumente usados no PowerShell, juntamente com seus significados:
+
+> : redireciona a saída de um comando para um arquivo ou para outro comando. Por exemplo,
+. Get-ChildItem > C:\output.txt
+. redirecionar a lista de arquivos e pastas no diretório atual para um arquivo chamado "output.txt".
+
+
+|: pipe, usado para enviar a saída de um comando para outro comando.
+. Get-ChildItem | Sort-Object
+. envie a lista de arquivos e pastas no diretório atual para o cmdlet "Sort-Object", que os classifica em ordem alfabética.
+
+
+. : usado para executar um script ou comando no contexto atual.
+.\script.ps1
+. execute um script chamado "script.ps1" no diretório atual.
+
+
+* : curinga, usado para representar qualquer conjunto de caracteres em um nome de arquivo ou pasta.
+. Por exemplo, Get-ChildItem C:\Temp\*.txt lista todos os arquivos com a extensão ".txt" no diretório "C:\Temp".
+
+
+? : curinga, usado para representar um caractere único em um nome de arquivo ou pasta.
+. Por exemplo, Get-ChildItem C:\Temp\Temp?.txt lista todos os arquivos com nomes começando com "Temp" e terminando com ".txt" no diretório "C:\Temp".
+
+
+$ : usado para denotar uma variável.
+. Por exemplo, $var = "hello" atribui a string "hello" à variável "var".
+
+
+() : usado para agrupar expressões em uma ordem específica.
+. Por exemplo, (2 + 3) * 4 avalia a expressão dentro dos parênteses primeiro (2 + 3 = 5) e, em seguida, multiplica por 4 para produzir um resultado de 20.
+
+
+{} : usado para definir um bloco de código.
+. Por exemplo, { Get-ChildItem } defina um bloco de código que lista os arquivos e pastas no diretório atual.
+
+
+. Esses são apenas alguns dos caracteres usados no PowerShell. Existem muitos outros caracteres e operadores que podem ser usados para manipular dados e executar tarefas no PowerShell.
+
+***********************************************************************************************
+***********************************************************************************************
+
+. Mudando a cor do prompt temporariamente
+. Abrir o console do PowerShell como administrador?
+. Como escrever um script no powershell?
+
+
+1. `Get-Help`: exibe a ajuda para um comando específico
+. help: exibe a ajuda para um comando específico
+
+
+2. `Get-ChildItem`: lista os itens em um diretório
+. dir: lista os arquivos e diretórios no diretório atual
+. ls: lista os arquivos e diretórios no diretório atual
+
+
+cd: muda o diretório atual
+cd .. : Volta um nível no diretório
+
+
+dir: lista os arquivos e diretórios no diretório atual
+ls: lista os arquivos e diretórios no diretório atual
+
+
+cls: limpa a tela
+clear: limpa a tela
+
+
+mkdir: cria um novo diretório
+del: remove um arquivo
+copy: copia um arquivo
+move: move ou renomeia um arquivo
+type: exibe o conteúdo de um arquivo
+
+mouse btn-right: paste (cola)
+
+"Ctrl + C" ou "Ctrl + Break" no teclado: Para finalizar um comando PowerShell.
+
+***********************************************************************************************
+***********************************************************************************************
+
+. O powershell utiliza os comandos do shell ou cmd?
+O PowerShell tem seu próprio conjunto de comandos eletivos e sintaxe, que é diferente dos comandos do shell ou do cmd. 
+No entanto, o PowerShell é compatível com muitos comandos do cmd, o que significa que você pode executar a maioria dos comandos do cmd diretamente no PowerShell. Além disso, o PowerShell também suporta a execução de scripts do cmd e shell, embora alguns comandos possam funcionar de maneira diferente do que em seus respectivos shells. Portanto, embora haja alguma compatibilidade entre os comandos do PowerShell, do cmd e do shell, cada um tem sua própria sintaxe e conjunto de recursos exclusivos.
+
+***********************************************************************************************
+
+PowerShell:
+
+Aqui está uma lista de alguns dos comandos mais comuns do PowerShell:
+
+1. `Get-Help`: exibe a ajuda para um comando específico
+2. `Get-ChildItem`: lista os itens em um diretório
+3. `Set-Location`: altera o diretório atual
+4. `New-Item`: cria um novo item (arquivo ou diretório)
+5. `Remove-Item`: exclui um item (arquivo ou diretório)
+6. `Copy-Item`: copia um item de um local para outro
+7. `Rename-Item`: renomeia um item
+8. `Get-Process`: lista os processos em execução no computador
+9. `Stop-Process`: para um processo em execução
+10. `Get-Service`: lista os serviços em execução no computador
+11. `Start-Service`: inicia um serviço
+12. `Stop-Service`: para um serviço em execução
+13. `Get-Content`: exibe o conteúdo de um arquivo de texto
+14. `Set-Content`: altera o conteúdo de um arquivo de texto
+15. `Select-Object`: seleciona um conjunto específico de propriedades de um objeto
+16. `Where-Object`: filtra objetos de uma lista baseado em uma condição
+17. `ForEach-Object`: executa uma ação para cada objeto em uma lista
+18. `Test-Path`: verifica se um caminho de arquivo ou diretório existe ou não
+
+Existem muitos outros comandos disponíveis no PowerShell, mas esses são alguns dos mais comuns e úteis para começar. Para obter mais informações sobre qualquer um desses comandos ou outros disponíveis, use o comando `Get-Help` seguido pelo nome do comando que deseja aprender mais.
+
+***********************************************************************************************
+Aqui estão alguns comandos comuns do CMD:
+
+cd: muda o diretório atual
+dir: lista os arquivos e diretórios no diretório atual
+mkdir: cria um novo diretório
+del: remove um arquivo
+copy: copia um arquivo
+move: move ou renomeia um arquivo
+type: exibe o conteúdo de um arquivo
+find: pesquisa por uma palavra ou padrão em um arquivo
+echo: exibe uma mensagem na tela
+set: define ou exibe uma variável de ambiente
+cls: limpa a tela
+ping: testa a conexão de rede com um endereço IP ou nome de domínio
+ipconfig: exibe informações de rede e configurações de interface
+tasklist: lista de processos em execução
+taskkill: para um processo em execução
+netstat: exibe estatísticas de rede e conexões
+shutdown: desliga ou reinicia o computador
+systeminfo: exibe informações do sistema
+help: exibe a ajuda para um comando específico
+color: define a cor do fundo e do texto na janela do CMD
+Estes são apenas alguns exemplos de comandos disponíveis no CMD. Para saber mais sobre um comando específico, você pode digitar o nome do comando seguido de /?para exibir a ajuda do comando completo.
+
+
+***********************************************************************************************
+
+bash shell:
+
+Aqui estão alguns comandos comuns do shell Bash:
+
+cd: muda o diretório atual
+ls: lista os arquivos e diretórios no diretório atual
+mkdir: cria um novo diretório
+rm: remove um arquivo ou diretório
+cp: copia um arquivo ou diretório
+mv: move ou renomeia um arquivo ou diretório
+cat: exibe o conteúdo de um arquivo
+grep: pesquisa por uma palavra ou padrão em um arquivo
+echo: exibe uma mensagem na tela
+pwd: exibe o diretório atual completo
+chmod: altera as permissões de um arquivo ou diretório
+ssh: conecte-se a um servidor remoto
+tar: cria ou extrai arquivos compactados
+wget: faz download de um arquivo da internet
+ping: testa a conexão de rede com um endereço IP ou nome de domínio
+top: exibe os processos em execução e o uso de recursos do sistema
+ps: lista de processos em execução
+kill: para um processo em execução
+ifconfig: exibe informações de rede e configurações de interface
+history: exibe o histórico de comandos usados
+Esses são apenas alguns exemplos de comandos do bash shell. Há muitos outros disponíveis, dependendo do sistema operacional e do ambiente em que você está trabalhando. Para saber mais sobre um comando específico, você pode usar o comando manseguido pelo nome do comando para exibir o manual do usuário completo.
+
+***********************************************************************************************
+***********************************************************************************************
+
+Cmdlet (pronunciado "command-let") é uma abreviação para "command applet" e é um termo usado no PowerShell da Microsoft para descrever pequenos programas ou comandos de gerenciamento que são projetados para realizar tarefas específicas. Os cmdlets são executados dentro do ambiente do PowerShell e são projetados para serem fáceis de usar e automatizar.
+
+Os cmdlets são diferentes dos comandos tradicionais, pois são projetados para seguir uma convenção de nomenclatura consistente e ter uma estrutura de entrada e saída comum, tornando-os mais fáceis de usar e entender. Eles também são projetados para serem mais seguros do que os comandos tradicionais, porque só podem ser executados com permissões limitadas a menos que o usuário tenha privilégios de administrador.
+
+Existem centenas de cmdlets integrados no PowerShell, cobrindo uma ampla gama de tarefas, desde gerenciamento de processos e serviços até gerenciamento de usuários e arquivos. Além disso, você pode criar seus próprios cmdlets personalizados para automatizar tarefas específicas em seu ambiente.
+
+Em resumo, os cmdlets são uma parte importante do PowerShell e são projetados para tornar a automação de tarefas de gerenciamento de sistemas mais fácil e acessível para os usuários.
+
+***********************************************************************************************
+
+Para finalizar um comando PowerShell, você pode pressionar a combinação de teclas "Ctrl + C" ou "Ctrl + Break" no teclado. Isso interromperá a execução do comando atual e retornará ao prompt do PowerShell.
+
+No entanto, se o comando estiver em execução em segundo plano, ou se você deseja finalizá-lo imediatamente sem interrompê-lo, você pode usar o cmdlet
+
+***********************************************************************************************
+
+O que é o PowerShell ISE (Integrated Scripting Environment)?
+
+PowerShell ISE (Integrated Scripting Environment) é um ambiente integrado de desenvolvimento (IDE) para a criação e edição de scripts do PowerShell no Windows. Ele fornece uma interface gráfica do usuário (GUI) que inclui um editor de texto, console do PowerShell e ferramentas para depurar e testar scripts.
+
+O PowerShell ISE oferece recursos avançados de edição, como realce de sintaxe, conclusão de código e recursos de formatação. Ele também permite que você execute comandos e scripts diretamente do editor e visualize a saída no console integrado.
+
+O PowerShell ISE é uma ferramenta útil para os desenvolvedores que trabalham com o PowerShell regularmente, pois permite que eles escrevam e testem scripts de forma eficiente em um ambiente integrado. Ele também é útil para administradores de sistema que precisam automatizar tarefas e gerenciar sistemas usando scripts do PowerShell. O PowerShell ISE vem pré-instalado no Windows 7, Windows 8.1 e Windows 10 e pode ser encontrado em "Iniciar -> Todos os programas -> Acessórios -> Windows PowerShell -> Windows PowerShell ISE".
+
+
+***********************************************************************************************
+
+Como escrever um script no powershell?
+
+Para escrever um script no PowerShell, você pode usar qualquer editor de texto, como o Bloco de notas, o Visual Studio Code ou o PowerShell Integrated Scripting Environment (ISE).
+
+Siga os passos abaixo para criar um script PowerShell básico:
+
+1. Abra o editor de texto de sua escolha.
+2. Crie um novo arquivo em branco.
+3. Digite os comandos do PowerShell que deseja incluir no script. Por exemplo, você pode usar o comando "Write-Host" para imprimir uma mensagem na tela.
+4. Salve o arquivo com uma extensão de arquivo ".ps1" (por exemplo, "meu_script.ps1"). Certifique-se de que o tipo de arquivo esteja definido como "Arquivos do Windows PowerShell".
+5. Abra o console do PowerShell.
+6. Navegue até o diretório onde você salvou o arquivo do script usando o comando "cd" (por exemplo, "cd C:\Users\SeuUsuario\Documents").
+7. Execute o script digitando o nome do arquivo, incluindo a extensão de arquivo ".ps1". Por exemplo, digite ".\meu_script.ps1" e pressione Enter.
+
+O PowerShell executará os comandos no script e exibirá a saída na tela. Lembre-se de que, por padrão, os scripts do PowerShell não são executáveis. Você precisa conceder permissão para executar scripts do PowerShell antes de poder executá-los. Para fazer isso, abra o console do PowerShell como administrador e execute o comando "Set-ExecutionPolicy" para definir a política de execução do PowerShell. Por exemplo, você pode digitar "Set-ExecutionPolicy RemoteSigned" para permitir a execução de scripts locais e assinados digitalmente.
+
+***********************************************************************************************
+***********************************************************************************************
+
+. Comandos combinados para o terminal bash:
+
+. 1. Listar arquivos, pesquisar uma palavra e ordenar o resultado: - Lista todos os arquivos `.txt`, filtrando e ordenando por nome.
+ls -l | grep ".txt" | sort
+
+
+. 2. Procurar um texto em arquivos de um diretório: - Busca pela palavra em todos os arquivos do diretório atual, mostrando número das linhas.
+grep -rnw "palavra" *
+
+
+. 3. Mostrar uso de disco de cada subdiretório (do maior para o menor): - Exibe o espaço ocupado e ordena do maior para o menor.
+du -sh * | sort -hr
+
+
+. 4. Exibir apenas arquivos modificados hoje:
+find . -type f -daystart -mtime 0
+
+
+. 5. Contar arquivos por extensão: - Conta quantos arquivos `.jpg` existem no diretório.
+ls *.jpg | wc -l
+
+
+. 6. Processar arquivos em lote (for loop + comando): - Converte todas as imagens `.jpg` para `.png` usando o ImageMagick.
+for file in *.jpg; do convert "$file" "${file%.jpg}.png"; done
+
+
+. 7. Redirecionar saída e erro para arquivos diferentes:
+comando > saida.txt 2> erro.txt
+
+. 8. Comprimir todos arquivos em um tar.gz excluindo uma pasta:
+tar czvf backup.tgz --exclude="node_modules" *
+
+. 9. Mostrar os 10 processos que mais consomem memória:
+ps aux --sort=-%mem | head
+
+. 10. Remover arquivos grandes (>10MB) do diretório:
+find . -type f -size +10M -exec rm {} \;
+
+. Notas Rápidas sobre Comandos Combinados
+- Use `|` (pipe) para passar a saída de um comando direto para o próximo.
+- Redirecione saída com `>` (sobrescreve) ou `>>` (acrescenta). Exemplo: `ls > lista.txt`.
+- Redirecione erros usando `2> erro.txt`.
+- Execute comandos em lote com `&&` (só executa o próximo se o anterior der certo):
+mkdir test && cd test
+
+***********************************************************************************************
