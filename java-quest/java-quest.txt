@@ -136,10 +136,240 @@ Executar código de limpeza ou encerramento, independentemente de ter ocorrido e
 
 ===============================================================================================================
 
+[41] Qual é a diferença entre as palavras-chave “throw” e “throws” em Java?
+`throw` é usado para lançar explicitamente uma exceção;
+`throws` declara que um método pode lançar exceções que devem ser tratadas ou propagadas.
 
+[42] Qual é a diferença entre exceções verificadas e exceções de tempo de execução?
+Exceções verificadas (checked) são verificadas em tempo de compilação, enquanto exceções de tempo de execução (unchecked) são detectadas apenas em tempo de execução.
 
+[43] O que é a API Java?
+É o conjunto de bibliotecas e interfaces fornecidas pela linguagem Java para facilitar o desenvolvimento de aplicações.
 
+[44] Qual é a diferença entre uma ArrayList e uma LinkedList?
+`ArrayList` é baseada em arrays e oferece acesso rápido por índice, mas inserções/remover no meio é lento;
+`LinkedList` é baseada em lista ligada, com inserções/remoções rápidas, mas acesso por índice é mais lento.
 
+[45] Qual é a diferença entre um HashSet e um TreeSet?
+`HashSet` não garante ordem e é baseado em tabela de dispersão (hash),
+`TreeSet` mantém os elementos ordenados e é baseado em árvore rubro-negra.
+
+[46] Qual é a diferença entre o método “equals()” e o método “hashCode()”?
+`equals()` compara se objetos são equivalentes;
+`hashCode()` retorna um inteiro usado em estruturas de dados baseadas em hash (precisam ser consistentes).
+
+[47] Qual é a diferença entre uma cópia superficial e uma cópia profunda?
+Cópia superficial copia apenas referências dos objetos;
+cópia profunda duplica os objetos referenciados, criando cópias independentes.
+
+[48] O que é uma expressão lambda em Java?
+É uma forma concisa de representar uma função anônima, geralmente usada em programação funcional e APIs que aceitam interfaces funcionais.
+
+[49] O que é programação funcional em Java?
+Estilo em que funções são tratadas como cidadãos de primeira classe, possibilitando passagem de funções como parâmetro, expressões lambda, imutabilidade e ausência de efeitos colaterais.
+
+[50] Quais são os recursos do Java 8 para programação funcional?
+Expressões lambda, interface funcional, métodos default, referências a métodos e a API de Streams.
+
+===============================================================================================================
+
+[51] Qual é a diferença entre uma interface e uma classe abstrata?
+Classe abstrata pode ter implementação parcial e atributos de classe;
+interface define apenas contratos, mas a partir do Java 8 pode ter métodos default e static.
+
+[52] Qual é a finalidade da palavra-chave “default” em métodos de interface?
+Permitir que uma interface tenha métodos com implementação padrão, sem obrigar todas as classes que implementam a interface a sobrescrevê-los.
+
+[53] Qual é a diferença entre um BufferedReader e um Scanner?
+`BufferedReader` é eficiente para leitura de grandes volumes de texto e lê linhas inteiras;
+`Scanner` tem métodos de análise e pode ler diferentes tipos de dados (int, double etc.), além de strings.
+
+[54] Qual é o propósito da classe “StringBuilder” em Java?
+Manipular e modificar cadeias de texto de forma eficiente e mutável, sem criar múltiplos objetos como ocorre com `String`.
+
+[55] Qual é a diferença entre as interfaces “Comparable” e “Comparator”?
+`Comparable` define a ordem natural do objeto via método `compareTo`,
+`Comparator` permite definir diferentes critérios de ordenação externamente à classe.
+
+[56] Qual é o propósito da palavra-chave “assert” em Java?
+Permitir a inserção de afirmações (testes) de veracidade em tempo de execução, úteis para depuração.
+
+[57] Qual é a diferença entre uma variável local e uma variável de instância?
+Variável local é declarada dentro de métodos e seu escopo é restrito ao método;
+variável de instância pertence ao objeto (classe), existindo enquanto o objeto existir.
+
+[58] Qual é o propósito da palavra-chave “transient” em Java?
+Indica que um atributo não deve ser serializado, ou seja, não será salvo em streams de objetos.
+
+[59] Qual é a finalidade do bloco “estático” em Java?
+Inicializar variáveis estáticas ou executar código ao carregar a classe, antes da criação de instâncias.
+
+[60] Qual é o propósito da palavra-chave “strictfp” em Java?
+Garante precisão consistente de operações com ponto flutuante em diferentes plataformas, seguindo o padrão IEEE 754.
+
+===============================================================================================================
+
+[61] Qual é a diferença entre uma classe pública e uma classe padrão (pacote-privada)?
+Classe pública (`public`) pode ser acessada de qualquer pacote; classe padrão (sem modificador) só pode ser acessada dentro do mesmo pacote.
+
+[62] Qual é o propósito da palavra-chave “enum” em Java?
+Permite declarar um conjunto fixo de constantes (tipos enumerados), representando valores pré-definidos de forma segura e legível.
+
+[63] Qual é o propósito das instruções “break” e “continue” em Java?
+`break` encerra a execução do laço mais próximo (for, while, switch). `continue` interrompe a iteração atual e continua para a próxima iteração do laço.
+
+[64] Qual é o propósito da instrução “try-with-resources” em Java?
+Usar recursos (como arquivos, conexões) de modo seguro, fechando-os automaticamente ao final do bloco, evitando vazamentos.
+
+[65] Qual é o propósito do operador “instanceof” em Java?
+Verifica se um objeto é instância de uma determinada classe ou interface, retornando `true` ou `false`.
+
+[66] Qual é a diferença entre os operadores de pré-incremento e pós-incremento?
+Pré-incremento (`++i`): incrementa o valor e depois utiliza. Pós-incremento (`i++`): utiliza o valor e depois incrementa.
+
+[67] Qual é a diferença entre os operadores de pré-decremento e pós-decremento?
+Pré-decremento (`--i`): decrementa o valor e depois utiliza. Pós-decremento (`i--`): utiliza o valor e depois decrementa.
+
+[68] Qual é o propósito da classe “Math” em Java?
+Oferece métodos e constantes matemáticos, como operações de raiz quadrada, potência, seno, cosseno, valor absoluto, PI.
+
+[69] Qual é o propósito da classe “StringBuffer” em Java?
+Permite manipulação eficiente de strings mutáveis com segurança para uso em múltiplas threads (diferente do StringBuilder).
+
+===============================================================================================================
+
+[70] Qual é o propósito do método “Math.random()” em Java?
+Gera um número aleatório do tipo `double` entre 0.0 (inclusive) e 1.0 (exclusivo).
+
+[71] Qual é o propósito da classe “Character” em Java?
+Manipular e testar valores do tipo caractere, como checagem de letras, números, maiúsculas/minúsculas, etc.
+
+[72] Qual é o propósito da classe “Integer” em Java?
+Permite manipular valores inteiros como objetos, facilitando conversão, parsing, comparação e uso em coleções.
+
+[73] Qual é o propósito da classe “Double” em Java?
+Equivalente à classe Integer, porém para números de ponto flutuante (double), com métodos utilitários para conversão, parsing, comparação.
+
+[74] Qual é o propósito da classe “System” em Java?
+Fornece acesso a recursos do sistema como entrada/saída padrão, propriedades do sistema, e métodos utilitários para manipular o ambiente de execução.
+
+[75] Qual é o propósito da classe “File” em Java?
+Representa arquivos e diretórios, permitindo criar, deletar, manipular e obter informações sobre arquivos no sistema.
+
+[76] Qual é o propósito da “FileNotFoundException” em Java?
+Exceção lançada quando um arquivo não pôde ser localizado no disco ao tentar abrir para leitura.
+
+[77] Qual é o propósito da “NullPointerException” em Java?
+Exceção lançada quando um método ou campo é acessado via referência nula (null).
+
+[78] Qual é o propósito da “ArrayIndexOutOfBoundsException” em Java?
+Exceção lançada quando o índice informado é inválido (está fora dos limites) de um array.
+
+[79] Qual é o propósito da “ArithmeticException” em Java?
+Exceção lançada em erros de operações aritméticas, como divisão por zero com inteiros.
+
+===============================================================================================================
+
+[80] Qual é o propósito da “NumberFormatException” em Java?
+Exceção lançada ao tentar converter uma string para um tipo numérico e ela não possuir um formato válido.
+
+[81] Qual é o propósito da classe “StringBuilder” em Java?
+Permite manipulação eficiente de strings mutáveis, ideal para operações intensivas com texto em ambiente não concorrente (não é thread-safe).
+
+[82] Qual é o propósito da classe “HashSet” em Java?
+Implementa um conjunto (set) que não aceita elementos duplicados e não garante ordem, baseado em tabela hash para eficiência.
+
+[83] Qual é o propósito da classe “HashMap” em Java?
+Estrutura de mapa (dicionário) baseada em hash, que armazena pares chave-valor, permitindo acesso rápido pela chave.
+
+[84] Qual é o propósito da classe “LinkedList” em Java?
+Implementa lista duplamente encadeada, permitindo inserções e remoções eficientes nas extremidades; pode ser usada como fila ou pilha.
+
+[85] Qual é o propósito da interface “Comparator” em Java?
+Permite definir diferentes formas de ordenar objetos, implementando o método `compare()` para personalizar a ordenação.
+
+[86] Qual é o propósito da interface “Comparable” em Java?
+Define a ordem natural de objetos de uma classe através do método `compareTo()`.
+
+[87] Qual é o propósito da palavra-chave “super” em Java?
+Permite acessar membros (métodos, atributos ou construtor) da superclasse direta. Fundamental em herança.
+
+[88] Qual é o propósito da palavra-chave “this” em Java?
+Refere-se ao próprio objeto atual; diferencia atributos de parâmetros com o mesmo nome.
+
+[89] Qual é o propósito da palavra-chave “final” em Java?
+Indica imutabilidade: variável não pode ter seu valor alterado, método não pode ser sobrescrito, classe não pode ser herdada.
+
+[90] Qual é o propósito da palavra-chave “static” em Java?
+Indica que o membro pertence à classe e não a uma instância, podendo ser acessado diretamente pela classe.
+
+===============================================================================================================
+
+[91] Qual é o propósito da palavra-chave “abstract” em Java?
+Permite declarar classes e métodos que não podem ser instanciados (classe) ou que devem ser implementados obrigatoriamente pelas subclasses (método).
+
+[92] Qual é o propósito da palavra-chave “interface” em Java?
+Define um contrato de métodos que as classes devem implementar; fornece abstração e polimorfismo.
+
+[93] Qual é o propósito da palavra-chave “pacote” em Java?
+Na verdade, o termo correto em Java é `package`, usado para organizar classes em namespaces, facilitando a modularização e evitando conflitos de nomes.
+
+[94] Qual é o propósito da palavra-chave “import” em Java?
+Permite usar classes de outros pacotes sem precisar escrever o caminho completo toda vez.
+
+[95] Qual é o propósito da palavra-chave “throw” em Java?
+Usada para lançar explicitamente uma exceção durante a execução do código.
+
+[96] Qual é o propósito da palavra-chave “throws” em Java?
+Indica na assinatura de um método que ele pode lançar (propagar) determinada(s) exceção(ões).
+
+[97] Qual é o propósito do bloco “try-catch-finally” em Java?
+Permite tratar exceções de forma estruturada: tentar executar um código (`try`), capturar e tratar possíveis exceções (`catch`) e executar um bloco final obrigatoriamente (`finally`).
+
+[98] Qual é o propósito do operador “instanceof” em Java?
+Verifica se um objeto é instância de certa classe ou interface, retornando `true` ou `false`.
+
+[99] Qual é o propósito da instrução “break” em Java?
+Interrompe a execução do laço ou switch mais próximo, transferindo o controle para a próxima instrução após o laço/switch.
+
+[100] Qual é o propósito da instrução “continue” em Java?
+Interrompe a iteração atual de um laço, e inicia a próxima iteração imediatamente.
+
+===============================================================================================================
+
+[101] O que são **Generics** em Java e para que servem?
+Permitem criar classes, interfaces e métodos que funcionam com diferentes tipos de dados de forma segura, promovendo reusabilidade e evitando casts desnecessários e erros de tipo em tempo de execução.
+
+[102] O que é e como funciona o **Garbage Collector** em Java?
+É um mecanismo automático que gerencia a alocação e liberação de memória, removendo objetos que não estão mais em uso pelo programa, evitando vazamento de memória.
+
+[103] Explique o que é uma **classe interna** (inner class) em Java e quando utilizá-la.
+Uma classe definida dentro de outra classe. Serve para organizar o código, encapsular lógica relacionada e, em alguns casos, acessar membros privados da classe externa.
+
+[104] O que é e para que serve o pacote **java.util.concurrent**?
+Prover utilitários, classes e interfaces para facilitar programação concorrente segura e eficiente (como pools de threads, locks, semáforos, estruturas thread-safe, etc).
+
+[105] Explique a diferença entre **Queue**, **Deque** e **Stack** na API de Coleções do Java.
+- `Queue`: fila (FIFO) — adiciona no final, remove do início.
+- `Deque`: fila dupla — pode adicionar/remover em ambos os extremos.
+- `Stack`: pilha (LIFO) — adiciona e remove do topo.
+
+[106] O que significa **Imutabilidade** no contexto da classe String em Java?
+Instâncias de `String` não podem ser alteradas após serem criadas; qualquer alteração gera um novo objeto. Isso oferece segurança e facilita o uso em ambientes concorrentes.
+
+[107] O que é **Reflection** e quando seu uso é indicado?
+Reflection permite inspecionar e manipular informações sobre classes, métodos e atributos em tempo de execução. É útil para frameworks, inversão de controle, ferramentas de serialização, porém deve ser usado com cautela devido ao impacto em segurança e desempenho.
+
+[108] Quais são as vantagens do **Java Stream API** e exemplos de uso comum?
+Permite processar coleções de dados de forma declarativa, funcional, paralela e fluente. Usos comuns: filtragem, transformação (map), agregação (reduce), buscas e manipulação de dados.
+
+[109] Explique o papel do **module-info.java** a partir do Java 9.
+É o arquivo que define um módulo Java, especificando quais pacotes são expostos (exports) e quais dependências de outros módulos existem (requires). Facilita controle de encapsulamento e modularização do sistema.
+
+[110] O que é o **pattern matching** (correspondência de padrões) no Java moderno?
+É uma forma de simplificar operações de verificação de tipos e extração de valores, por exemplo, com `instanceof` aprimorado e switch expressions, facilitando códigos mais simples e seguros para manipular tipos diferentes.
+
+===============================================================================================================
 
 
 
