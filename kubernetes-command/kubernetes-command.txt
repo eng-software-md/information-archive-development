@@ -1,0 +1,75 @@
+Lista de Comandos do Kubernetes (kubectl)
+
+-> Informações Básicas
+
+kubectl version                # Exibe a versão do kubectl e do servidor
+kubectl cluster-info           # Mostra informações do cluster atual
+kubectl config view            # Mostra as configurações do contexto atual
+kubectl get nodes              # Lista todos os nós do cluster
+kubectl get namespaces         # Lista todos os namespaces
+
+
+-> Recursos do Cluster
+
+kubectl get pods                       # Lista todos os pods no namespace atual
+kubectl get pods -A                    # Lista todos os pods em todos os namespaces
+kubectl get svc                        # Lista todos os serviços
+kubectl get deployments                # Lista todos os deployments
+kubectl describe pod <nome-do-pod>     # Detalhes de um pod específico
+kubectl describe svc <nome-serviço>    # Detalhes do serviço
+kubectl logs <nome-do-pod>             # Exibe logs de um pod
+kubectl logs -f <nome-do-pod>          # Segue (segue em tempo real) os logs do pod
+
+
+-> Ações em Pods e Deployments
+
+kubectl apply -f arquivo.yaml         # Aplica a configuração de um arquivo
+kubectl delete -f arquivo.yaml        # Remove recursos definidos no arquivo
+kubectl edit deployment <nome>        # Edita deployment em tempo real
+
+
+-> Aplicar, Editar e Excluir Recursos
+
+kubectl apply -f arquivo.yaml         # Aplica a configuração de um arquivo
+kubectl delete -f arquivo.yaml        # Remove recursos definidos no arquivo
+kubectl edit deployment <nome>        # Edita deployment em tempo real
+
+
+-> Execução Interativa
+
+kubectl exec -it <nome-do-pod> -- /bin/sh        # Acessar o shell de um pod
+kubectl port-forward svc/<serviço> 8080:80       # Encaminha porta local 8080 para a 80 do serviço
+kubectl cp <origem> <destino>                    # Copia arquivos de/para o pod
+
+
+-> Recursos Avançados
+
+kubectl top nodes                  # Mostra uso de recursos dos nós (requer metrics-server)
+kubectl top pods                   # Mostra uso de recursos dos pods
+kubectl get events                 # Lista eventos do cluster
+
+
+Namespace
+
+kubectl get pods -n NAMESPACE           # Lista pods em um namespace específico
+kubectl config set-context --current --namespace=NAMESPACE # Define o namespace padrão
+
+
+->Outros Comandos Úteis
+
+kubectl explain pod                    # Mostra a documentação sobre o recurso Pod
+kubectl get all                        # Mostra todos os recursos no namespace atual
+kubectl label pod <pod> key=value      # Adiciona/atualiza label a um pod
+kubectl annotate pod <pod> chave=valor # Adiciona/atualiza anotação a um pod
+
+
+-> Exemplos Combinando Comandos
+
+. - Listar todos os pods, ordenar por nome e pegar os 5 primeiros:
+kubectl get pods | sort | head -5
+
+. - Fazer backup dos manifests de todos os deployments:
+kubectl get deploy -o yaml > backup-deployments.yaml
+
+. - Checar status dos pods e filtrar os que estão com erro:
+kubectl get pods | grep Error
